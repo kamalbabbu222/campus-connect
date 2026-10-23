@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect | Student Community</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">Campus<span>Connect.</span></a>
+
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#events">Events</a>
+            <a href="#notices">Notices</a>
+            <a href="#clubs">Clubs</a>
+        </nav>
+
+        <a href="#events" class="nav-btn">Explore Campus ↗</a>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">✦ YOUR CAMPUS, CONNECTED</span>
+                <h1>College life,<br>all in <span>one place.</span></h1>
+                <p>
+                    Discover events, stay updated with college notices,
+                    find your community and make every campus moment count.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#events" class="primary-btn">Explore Events →</a>
+                    <a href="#notices" class="secondary-btn">Latest Notices</a>
+                </div>
+
+                <div class="stats">
+                    <div><strong>12+</strong><small>Upcoming Events</small></div>
+                    <div><strong>08</strong><small>Student Clubs</small></div>
+                    <div><strong>01</strong><small>Campus Hub</small></div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="visual-top">
+                        <span>✦ CAMPUS LIFE</span>
+                        <span class="live-dot">● LIVE</span>
+                    </div>
+                    <div class="visual-emoji">🎓</div>
+                    <h3>Your next big moment starts here.</h3>
+                    <p>Learn together. Grow together.</p>
+                    <div class="mini-tags">
+                        <span>💻 Tech</span>
+                        <span>🎨 Creativity</span>
+                        <span>🤝 Community</span>
+                    </div>
+                </div>
+                <div class="floating-note">✨ Find your people</div>
+            </div>
+        </section>
+
+        <section class="section" id="events">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">WHAT'S HAPPENING</span>
+                    <h2>Campus <span>Events</span></h2>
+                    <p>Discover something exciting happening around you.</p>
+                </div>
+                <span class="event-count" id="eventCount">4 events</span>
+            </div>
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input id="eventSearch" type="text"
+                       placeholder="Search events, workshops, hackathons...">
+            </div>
+
+            <div class="event-grid" id="eventGrid">
+                <article class="event-card">
+                    <div class="event-art purple">
+                        <span class="event-icon">💻</span>
+                        <span class="category">TECHNOLOGY</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date">📅 28 OCT · 10:00 AM</div>
+                        <h3>CodeSprint Hackathon</h3>
+                        <p>Build creative solutions and showcase your coding skills.</p>
+                        <div class="event-footer">
+                            <span>📍 Computer Lab</span>
+                            <button class="join-btn">Join Event ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-art orange">
+                        <span class="event-icon">🎤</span>
+                        <span class="category">CULTURAL</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date">📅 30 OCT · 11:00 AM</div>
+                        <h3>Talent Fiesta</h3>
+                        <p>Show your talent through music, dance and creativity.</p>
+                        <div class="event-footer">
+                            <span>📍 Main Auditorium</span>
+                            <button class="join-btn">Join Event ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-art green">
+                        <span class="event-icon">🚀</span>
+                        <span class="category">INNOVATION</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date">📅 02 NOV · 09:30 AM</div>
+                        <h3>Startup Idea Fest</h3>
+                        <p>Turn your ideas into projects and pitch your vision.</p>
+                        <div class="event-footer">
+                            <span>📍 Seminar Hall</span>
+                            <button class="join-btn">Join Event ↗</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <div class="event-art blue">
+                        <span class="event-icon">🧠</span>
+                        <span class="category">LEARNING</span>
+                    </div>
+                    <div class="event-body">
+                        <div class="event-date">📅 05 NOV · 12:00 PM</div>
+                        <h3>Web Dev Workshop</h3>
+                        <p>Learn the basics of building modern websites.</p>
+                        <div class="event-footer">
+                            <span>📍 Innovation Lab</span>
+                            <button class="join-btn">Join Event ↗</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <p class="no-results" id="noResults" hidden>No events found. Try another search.</p>
+        </section>
+
+        <section class="section lower-grid">
+            <div class="notice-panel" id="notices">
+                <span class="eyebrow">STAY INFORMED</span>
+                <h2>Latest <span>Notices</span></h2>
+
+                <div class="notice-item">
+                    <span class="notice-icon">📢</span>
+                    <div>
+                        <h3>Semester Registration</h3>
+                        <p>Please check the college portal for registration details.</p>
+                        <small>GENERAL ANNOUNCEMENT</small>
+                    </div>
+                </div>
+
+                <div class="notice-item">
+                    <span class="notice-icon">📚</span>
+                    <div>
+                        <h3>Library Timings</h3>
+                        <p>Check the notice board for updated library timings.</p>
+                        <small>STUDENT UPDATE</small>
+                    </div>
+                </div>
+
+                <div class="notice-item">
+                    <span class="notice-icon">🏆</span>
+                    <div>
+                        <h3>Club Registrations</h3>
+                        <p>Explore student clubs and upcoming activities.</p>
+                        <small>STUDENT COMMUNITY</small>
+                    </div>
+                </div>
+                <p class="disclaimer">Demo notices — replace with verified college updates.</p>
+            </div>
+
+            <div class="club-panel" id="clubs">
+                <span class="eyebrow">FIND YOUR COMMUNITY</span>
+                <h2>Explore <span>Clubs</span></h2>
+                <p>Meet students who share your interests.</p>
+
+                <div class="club-item">
+                    <span class="club-icon">👨‍💻</span>
+                    <div><h3>Tech Club</h3><small>Coding · Projects</small></div>
+                    <span class="club-arrow">↗</span>
+                </div>
+                <div class="club-item">
+                    <span class="club-icon">🎨</span>
+                    <div><h3>Creative Club</h3><small>Design · Art</small></div>
+                    <span class="club-arrow">↗</span>
+                </div>
+                <div class="club-item">
+                    <span class="club-icon">🎭</span>
+                    <div><h3>Cultural Club</h3><small>Music · Dance</small></div>
+                    <span class="club-arrow">↗</span>
+                </div>
+                <div class="club-item">
+                    <span class="club-icon">🌱</span>
+                    <div><h3>Eco Club</h3><small>Nature · Volunteering</small></div>
+                    <span class="club-arrow">↗</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <span>YOUR CAMPUS JOURNEY STARTS HERE</span>
+            <h2>Make campus life<br>more <em>connected.</em></h2>
+            <a href="#home" class="primary-btn">Back to Top ↑</a>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#home" class="logo">Campus<span>Connect.</span></a>
+        <p>Designed for students, powered by community.</p>
+        <small>© 2026 CampusConnect · Student Project Demo</small>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
